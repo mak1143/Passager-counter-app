@@ -1,0 +1,144 @@
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
+:root{
+    --primary-clr-font: hsl(0, 0%, 100% , 1);
+    --primary-black: hsl(200, 7%, 8% ,1 );
+    --purple-500: hsl(284, 74%, 58% , 1);
+    --green-400: hsl(189, 59%, 40% ,1);
+}
+
+  
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/assets/images/image_cliffs.jpg");
+    background-color: hsla(206, 23%, 94%, 0.382);
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    min-height: 100vh;
+}
+.container-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 500px;
+    height: 500px; 
+    padding: 2rem;
+    flex-shrink: 0; 
+    text-transform: capitalize;
+    border-radius: 32px;
+    background: var(--primary-black);
+    box-shadow: -168px 560px 164px 0px rgba(0, 0, 0, 0.01), -107px 358px 150px 0px rgba(0, 0, 0, 0.08), -60px 202px 126px 0px rgba(0, 0, 0, 0.27), -27px 90px 94px 0px rgba(0, 0, 0, 0.45), -7px 22px 51px 0px rgba(0, 0, 0, 0.52);
+
+
+
+}
+
+
+h1.heading {
+    color: var(--primary-clr-font);
+    font-family: "figtree";
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+h1.heading::after{
+    content: '🚀';
+
+}
+
+h2#count-el {
+    color: var(--primary-clr-font);
+    text-align: center;
+    font-family: "roboto";
+    font-size: 4.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+p#saved-el{
+    color: #FFF;
+    font-family: "Inter";
+    font-size: .75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  
+    
+}
+.count-wrapper{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+
+
+div.btn-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 7rem;
+    align-items: center;
+}
+
+button{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    text-align: center;
+    font: inherit;
+    text-transform: uppercase;
+    border: 1px solid;
+}
+
+
+
+
+#increment-btn {
+    border-radius: 16.6875rem;
+    background: #B946E3;
+    font-size: 2rem;
+    transition: background-color, border-radius;
+
+   &:hover{
+        background: #b946e3bd;
+        color: white;
+        border: 1px solid white;
+
+    }
+}
+
+#save-btn {
+    transition: background-color, color;
+    background: var(--green-400);
+
+
+    
+   &:hover{
+        background:hsla(189, 81%, 79%, 0.613);
+        color: white;
+      
+      
+
+    }
+}
+
+
+/* || transition custom code here || */
+#increment-btn , #save-btn{
+    transition:  .3s ease-in-out;
+}
